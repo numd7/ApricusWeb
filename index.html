@@ -1,232 +1,668 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<!-- basic -->
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- mobile metas -->
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="viewport" content="initial-scale=1, maximum-scale=1">
-<!-- site metas -->
-<title>Element</title>
-<meta name="keywords" content="">
-<meta name="description" content="">
-<meta name="author" content="">	
-<!-- bootstrap css -->
-<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-<!-- style css -->
-<link rel="stylesheet" type="text/css" href="css/style.css">
-<!-- Responsive-->
-<link rel="stylesheet" href="css/responsive.css">
-<!-- fevicon -->
-<link rel="icon" href="images/fevicon.png" type="image/gif" />
-<!-- Scrollbar Custom CSS -->
-<link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
-<!-- Tweaks for older IEs-->
-<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
-<!-- owl stylesheets --> 
-<link rel="stylesheet" href="css/owl.carousel.min.css">
-<link rel="stylesheet" href="css/owl.theme.default.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+<!doctype html>
+<html class="h-100" lang="en">
 
-</head>
-<body>
-	<!--header section start -->
-	<div class="header_section">
-		<div class="container-fluid">
-			<nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="logo"><a href="index.html"><img src="images/logo.png"></a></div>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                  <ul class="navbar-nav">
-                    <li class="nav-item active">
-                      <a class="nav-link" href="index.html">HOME</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="about.html">ABOUT</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="services.html">SERVICES</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="index.html">WEB</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="index.html">ELEMENTS</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="contact.html">CONTACT</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#"><img src="images/search-icon.png"></a>
-                    </li>
-                  </ul>
-                </div>
-            </nav>
-		</div>
-	</div>
-	<!--header section end -->
-	<!--banner section start -->
-	<div class="banner_section layout_padding">
-		<div class="container">
-			<h1 class="banner_taital">Web eLements Templates</h1>
-			<h2 class="free_text">Free Multipurpose Responsive 
-            Landing Page </h2>
-            <div class="read_bt">
-            	<div class="read_text"><a href="#">Read More</a></div>
+  <head>
+      <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+  <meta name="description" content="A growing collection of ready to use components for the CSS framework Bootstrap 5">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="96x96" href=".t/img/favicon.png">
+  <meta name="author" content="Holger Koenemann">
+  <meta name="generator" content="Eleventy v2.0.0">
+  <meta name="HandheldFriendly" content="true">
+  <title>Stride HTML Template - Frontpage one</title>
+  <link rel="stylesheet" href="css/theme.min.css">
+
+   <style>
+
+/* inter-300 - latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local(''),
+       url('./fonts/inter-v12-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('./fonts/inter-v12-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local(''),
+       url('./fonts/inter-v12-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('./fonts/inter-v12-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local(''),
+       url('./fonts/inter-v12-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('./fonts/inter-v12-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+</style>
+
+  </head>
+
+  <body data-bs-spy="scroll" data-bs-target="#navScroll">
+
+    <nav id="navScroll" class="navbar navbar-expand-lg navbar-light fixed-top" tabindex="0">
+  <div class="container">
+    <a class="navbar-brand pe-4 fs-4" href="/">
+  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-layers-half" viewbox="0 0 16 16">
+    <path d="M8.235 1.559a.5.5 0 0 0-.47 0l-7.5 4a.5.5 0 0 0 0 .882L3.188 8 .264 9.559a.5.5 0 0 0 0 .882l7.5 4a.5.5 0 0 0 .47 0l7.5-4a.5.5 0 0 0 0-.882L12.813 8l2.922-1.559a.5.5 0 0 0 0-.882l-7.5-4zM8 9.433 1.562 6 8 2.567 14.438 6 8 9.433z"/>
+  </svg>
+  <span class="ms-1 fw-bolder">Apricus</span>
+</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+  <li class="nav-item">
+    <a class="nav-link" href="/">
+            Home
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#aboutus">
+      About
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#services">
+      Services
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#contactus">
+      Contact Us
+    </a>
+  </li>
+
+    </ul>
+
+    </div>
+</div>
+</nav>
+
+    <main>
+      <div class="w-100 overflow-hidden bg-gray-100" id="top">
+  
+<div class="container position-relative" id="home">
+  <div class="col-12 col-lg-8 mt-0 h-100 position-absolute top-0 end-0 bg-cover" data-aos="fade-left" style="background-image: url(img/Dell.jpg);">
+    
+  </div>
+    <div class="row">
+
+      <div class="col-lg-7 py-vh-6 position-relative" data-aos="fade-right">
+        <p class="lead" style="visibility:hidden;">To be honest, this is just a stupid placeholder text. We don´t know how to sell anything, not even lesser or slower as you.</p>
+        <h1 class="display-1 fw-bold mt-5">Transforming Ideas into Reality.</h1>
+        <a href="#" class="btn btn-dark btn-xl shadow me-3 rounded-0 my-5" style="visibility:hidden;">Get started free</a>
+      </div>
+
+
+</div>
+</div>
+
+</div>
+
+<div class="py-vh-4 bg-gray-100 w-100 overflow-hidden" id="aboutus">
+  <div class="container">
+      
+<div class="row d-flex justify-content-between align-items-center">
+  <div class="col-lg-6">
+  <div class="row gx-5 d-flex">
+    <!-- <div class="col-md-11">
+      <div class="shadow ratio ratio-16x9 rounded bg-cover bp-center align-self-end" data-aos="fade-right" style="background-image: url(img/webp/people15.webp);--bs-aspect-ratio: 50%;">
+      </div>
+    </div>
+    <div class="col-md-5 offset-md-1">
+      <div class="shadow ratio ratio-1x1 rounded bg-cover mt-5 bp-center float-end" data-aos="fade-up" style="background-image: url(img/webp/interior42.webp);">
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="col-12 shadow ratio rounded bg-cover mt-5 bp-center" data-aos="fade-left" style="background-image: url(img/webp/people4.webp);--bs-aspect-ratio: 150%;">
+      </div>
+    </div> -->
+    <div class="col-lg-2">
+      <h1 class="py-5 border-end border-dark" data-aos="fade-left"><i>Mission & Vision</i></h1>
+    </div>
+  </div>
+</div>
+<div class="col-lg-4">
+  <h3 class="py-5 border-dark" data-aos="fade-left">Our mission is to create innovative software solutions that empower individuals, enhance productivity, and drive personal growth through cutting-edge technology and exceptional service.</h3>
+  <!--<p data-aos="fade-left" data-aos-delay="200">Our mission is to deliver innovative software solutions that empower businesses, enhance productivity, and drive growth through cutting-edge technology and exceptional service.</p>-->
+  <p>
+  </p>
+</div>
+</div>
+
+  </div>
+</div>
+
+<div class="py-vh-5 w-100 overflow-hidden" id="services">
+  <div class="container">
+    <div class="row d-flex justify-content-between align-items-center">
+      <h1 class="display-4 fw-bold mt-5 border-bottom">Our Services</h1>
+      <div class="col-lg-5 py-vh-6 position-relative" data-aos="fade-right">
+        <h2 class="mt-4">iOS App Development</h2>
+        <p class="lead">Our iOS app development service is designed to transform your ideas into powerful, user-friendly applications that run seamlessly on all Apple devices.</p>
+      </div>
+      <div class="col-lg-6">
+        <div class="row">
+          <ul style="font-size: 1.25rem;">
+            <li><strong>Custom Solutions:</strong> Tailored apps that meet your specific needs and business goals.</li>
+            <li><strong>User Experience:</strong> Intuitive and engaging interfaces that enhance user satisfaction and retention.</li>
+            <li><strong>Performance:</strong> High-performance apps optimized for speed and efficiency.</li>
+            <li><strong>Security:</strong> Robust security measures to protect your data and user privacy.</li>
+            <li><strong>Support and Maintenance:</strong> Ongoing support to ensure your app remains up-to-date and functions smoothly.</li>
+          </ul>
+      </div>
+    </div>
+  </div>
+
+<!-- <div class="position-relative overflow-hidden w-100 bg-light" id="gallery">
+  <div class="container-fluid">
+  <div class="row overflow-scroll">
+    <div class="col-12">
+      <div class="row vw-100 px-0 py-vh-5 d-flex align-items-center scrollx">
+        <div class="col-md-2" data-aos="fade-up">
+            <img src="img/webp/interior37.webp" class="rounded shadow img-fluid" alt="nice gallery image" width="512" height="341">
+        </div>
+
+        <div class="col-md-2" data-aos="fade-up" data-aos-delay="200">
+            <img src="img/webp/people1.webp" class="img-fluid rounded shadow" alt="nice gallery image" width="1164" height="776">
+        </div>
+
+        <div class="col-md-3" data-aos="fade-up" data-aos-delay="400">
+            <img src="img/webp/people2.webp" class="img-fluid rounded shadow" alt="nice gallery image" width="844" height="1054">
+        </div>
+
+        <div class="col-md-3" data-aos="fade-up" data-aos-delay="600">
+            <img src="img/webp/interior29.webp" class="img-fluid rounded shadow" alt="nice gallery image" width="844" height="562">
+        </div>
+
+        <div class="col-md-2" data-aos="fade-up" data-aos-delay="800">
+            <img src="img/webp/people23.webp" class="rounded shadow img-fluid" alt="nice gallery image" width="512" height="341">
+        </div>
+      </div>
+    </div>
+   </div>
+ </div> -->
+
+</div>
+
+<!-- <div class="container py-vh-4 w-100 overflow-hidden">
+  <div class="row d-flex justify-content-center align-items-center">
+    <div class="col-lg-5">
+  <h3 class="py-5 border-top border-dark" data-aos="fade-right">What our clients say</h3>
+</div>
+<div class="col-md-7" data-aos="fade-left">
+  <blockquote>
+    <div class="fs-4 my-3 fw-light pt-4 border-bottom pb-3">“I´am the CEO of this company. So maybe you think "he will tell us something super awesome about it only". But no. Its a really strange place to work with creepy people all around.
+      They do some computer stuff I don´t understand. But I wear expensive Glasses and a Patagonia Hoodie. So I´am fine with it.”</div>
+    <img src="img/webp/person11.webp" width="64" height="64" class="img-fluid rounded-circle me-3" alt="" data-aos="fade">
+    <span><span class="fw-bold">John Doe,</span>
+      CEO of Stride Ltd.</span>
+  </blockquote>
+</div> -->
+
+  </div>
+</div>
+
+<div class="py-vh-6 bg-gray-900 text-light w-100 overflow-hidden" id="contactus">
+  <div class="container">
+    <div class="row d-flex justify-content-center">
+      <div class="col-lg-8 text-center" data-aos="fade">
+        <h1 class="display-4 fw-bold mt-5 mb-4">Contact Us</h1>
+        <form action="https://formspree.io/f/xeojgdkl" method="POST">
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" style="padding: 10px; border-radius: 5px; border: 1px solid #ccc;">
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" name="email" class="form-control" id="email" placeholder="Your Email" style="padding: 10px; border-radius: 5px; border: 1px solid #ccc;">
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea name="message" class="form-control" id="message" rows="5" placeholder="Your Message" style="padding: 10px; border-radius: 5px; border: 1px solid #ccc;"></textarea>
+          </div>
+          <button type="submit" class="btn btn-warning btn-xl shadow me-3 mt-4" data-aos="fade-down" style="padding: 10px 20px; border-radius: 5px;">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- <div class="bg-light w-100 overflow-hidden" id="testimonials">
+  <div class="container py-vh-6">
+    <div class="row d-flex justify-content-center">
+      <div class="col-12 col-lg-10 col-xl-8 text-center">
+  <h2 class="display-6">Loved by people all around the globe</h2>
+  <p class="lead">Our spaces and offices are soooooo lovely, no one would give us a negative rating! And look at these trustworthy avatar pictures! Trust us!</p>
+</div>
+<div class="col-12 mt-4">
+  <div class="row row-cols-1 row-cols-md-2 g-5 d-flex align-items-center">
+
+    <div class="col-12 col-lg-6 col-xl-4" data-aos="fade-right">
+      <div class="card p-4 mt-3 border-0">
+        <div class="card-body">
+          <div class="text-dark py-2 fs-3"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-half" viewBox="0 0 16 16">
+  <path d="M5.354 5.119 7.538.792A.516.516 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.537.537 0 0 1 16 6.32a.548.548 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.52.52 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.58.58 0 0 1 .085-.302.513.513 0 0 1 .37-.245l4.898-.696zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.565.565 0 0 1 .162-.505l2.907-2.77-4.052-.576a.525.525 0 0 1-.393-.288L8.001 2.223 8 2.226v9.8z"/>
+</svg>
+</div>
+          <blockquote class="blockquote">
+            <p>"That service is really really good. And I don´t say that because they pay me a lot of money. I say that because they don´t pay me more money anymore if I don´t say it..."</p>
+          </blockquote>
+          <div class="d-flex justify-content-between border-top pt-3">
+            <div>
+              <span class="h6 fw-5">Jane Doemunsky</span><br>
+              <small class="text-muted">COO, The Boo Corp.</small>
             </div>
-		</div>
-	</div>
-	<!--banner section end -->
-	<!--bg_main section start -->
-	<div class="container">
-		<div class="bg_main"><img src="images/bg-main.png"></div>
-	</div>
-	<!--bg_main section end -->
-	<!--about section start -->
-	<div class="about_section">
-		<div class="container">
-			<h1 class="about_text">about web elements</h1>
-			<p class="lorem_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore </p>
-			<div class="about_bg"><img src="images/about-bg.png"></div>
-			<p class="lorem_text">orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit</p>
-			<div class="read_bt_main">
-            	<div class="read_text_2"><a href="#">Read More</a></div>
-            </div>
-		</div>
-	</div>
-	<!--about section end -->
-	<!--service section start -->
-	<div class="service_section layout_padding">
-		<div class="container">
-			<h1 class="about_text">services</h1>
-			<p class="ipsum_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq</p>
-			<div class="service_section_2">
-				<div class="row">
-				    <div class="col-sm-12 col-lg-4">
-				    	<div class="icon_1"><img src="images/icon-1.png"></div>
-				    	<h1 class="website_text">website element</h1>
-				    	<p class="dolor_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliq</p>
-				    </div>
-				    <div class="col-sm-12 col-lg-4">
-				    	<div class="icon_1"><img src="images/icon-2.png"></div>
-				    	<h1 class="website_text">applicatinos element</h1>
-				    	<p class="dolor_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliq</p>
-				    </div>
-				    <div class="col-sm-12 col-lg-4">
-				    	<div class="icon_1"><img src="images/icon-3.png"></div>
-				    	<h1 class="website_text">design element</h1>
-				    	<p class="dolor_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliq</p>
-				    </div>
-			    </div>
-			</div>
-		</div>
-	</div>
-	<!--service section end -->
-	<!--contact section start -->
-	<div class="contact_section layout_padding">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6">
-					<h1 class="contact_text">Requeste a call back</h1>
-					<div class="contact_main">
-    			        <div class="mail_section">
-    			        	<input type="Name" class="mail_text" placeholder="Name" name="Name">
-    			        	<input type="Name" class="mail_text" placeholder="Email" name="Email">
-    			        	<input type="Name" class="mail_text" placeholder="Phone" name="Phone">
-    			        	<select>
-                              <option value="volvo">Select elements</option>
-                              <option value="saab">One</option>
-                              <option value="opel">Two</option>
-                              <option value="audi">Three</option>
-                            </select>
-    			        	<textarea class="massage_text" placeholder="Massage" rows="5" id="comment" name="text"></textarea>
-    			        	<div class="send_bt">
-				                <div class="send_text"><a href="#">SEND</a></div>
-			                </div>
-    			        </div>
-    		        </div>
-				</div>
-				<div class="col-md-6">
-					<div class="contact_bg"><img src="images/contact-bg.png"></div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!--contact section end -->
-	<!--client section start -->
-	<div class="client_section layout_padding">
-		<div class="container">
-			<h1 class="about_text">what is say clients</h1>
-			<p class="ipsum_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq</p>
-			<div class="client_section_2 layout_padding">
-				<h1 class="client_text">Consectetur adipiscing </h1>
-			    <p class="ipsum_text_2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim</p>
-                <div class="icon_4"><img src="images/icon-4.png"></div>
-			</div>
-		</div>
-	</div>
-	<!--client section end -->
-	<!--footer section start -->
-	<div class="footer_section layout_padding">
-		<div class="container">
-			<div class="footer_main">
-				<div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="Enter your email" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                    <div class="input-group-append">
-                      <span class="input-group-text" id="basic-addon2">subscribe Now</span>
-                    </div>
-                </div>
-                <h1 class="year_text">2020</h1>
-                <h1 class="landing_text">Free Multipurpose Responsive  Landing Page </h1>
-			</div>
-			<div class="social_icon">
-				<ul>
-					<li><a href="#"><img src="images/fb-icon.png"></a></li>
-					<li><a href="#"><img src="images/twitter-icon.png"></a></li>
-					<li><a href="#"><img src="images/linkdin-icon.png"></a></li>
-					<li><a href="#"><img src="images/instagram-icon.png"></a></li>
-					<li><a href="#"><img src="images/youtub-icon.png"></a></li>
-				</ul>
-			</div>
-		</div>
-	</div>
-	<!--footer section end -->
-	<!--copyright section start -->
-	<div class="copyright_section">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-12">
-					<p class="copyright_text">2020 All Rights Reserved Design by <a href="https://html.design/"> Free Html Templates</p>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!--copyright section end -->
-	 <!-- Javascript files-->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/popper.min.js"></script>
+            <img src="img/webp/person9.webp" width="48" height="48" class="rounded-circle" alt="" data-aos="fade">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-lg-6 col-xl-4">
+      <div class="card p-4 shadow mt-3 border-0" data-aos="fade-down">
+        <div class="card-body">
+          <div class="text-dark py-2 fs-3"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+  <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+</svg>
+</div>
+          <blockquote class="blockquote">
+            <p>"I really don´t get what they do. Something with Crypto, NFT´s, SaaS and Cyber Security. Maybe an App for Kids...? But they have this nice website...so who cares what they do as long as they are good at it."</p>
+          </blockquote>
+          <div class="d-flex justify-content-between border-top pt-3">
+            <p class="card-text">
+              <span class="h6 fw-5">Jenny Matrix</span><br>
+              <small class="text-muted">Daughter of Col. John Matrix, Commando.</small>
+            </p>
+            <img src="img/webp/person3.webp" width="48" height="48" class="rounded-circle" alt="" data-aos="fade">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-lg-6 col-xl-4">
+      <div class="card p-4 mt-3 border-0" data-aos="fade-left">
+        <div class="card-body">
+          <div class="text-dark py-2 fs-3"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+  <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+  <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+  <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+</svg>
+</div>
+          <blockquote class="blockquote">
+            <p>"I don´t know if they are good at what they do. But they have nice coffee and a shiny brand new startup office with bikes on the wall and all that stuff."</p>
+          </blockquote>
+          <div class="d-flex justify-content-between border-top pt-3">
+            <p class="card-text">
+              <span class="h6 fw-5">Rustin Cohle</span><br>
+              <small class="text-muted">Detective, Somewhere in the swamps</small>
+            </p>
+            <img src="img/webp/person8.webp" width="48" height="48" class="rounded-circle" alt="" data-aos="fade">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-lg-6 col-xl-4">
+      <div class="card p-4 mt-3 border-0" data-aos="fade-right">
+        <div class="card-body">
+          <div class="text-dark py-2 fs-3"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-half" viewBox="0 0 16 16">
+  <path d="M5.354 5.119 7.538.792A.516.516 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.537.537 0 0 1 16 6.32a.548.548 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.52.52 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.58.58 0 0 1 .085-.302.513.513 0 0 1 .37-.245l4.898-.696zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.565.565 0 0 1 .162-.505l2.907-2.77-4.052-.576a.525.525 0 0 1-.393-.288L8.001 2.223 8 2.226v9.8z"/>
+</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+  <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+</svg>
+</div>
+          <blockquote class="blockquote">
+            <p>"Its not good at all but I give it five stars because I killed (accidentally) the CEO´s cat with a lawnmover."</p>
+          </blockquote>
+          <div class="d-flex justify-content-between border-top pt-3">
+            <p class="card-text">
+              <span class="h6 fw-5">Richard Thornburg</span><br>
+              <small class="text-muted">News Reporter, KFLW-TV</small>
+            </p>
+            <img src="img/webp/person14.webp" width="48" height="48" class="rounded-circle" alt="" data-aos="fade">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-lg-6 col-xl-4">
+      <div class="card p-4 mt-3 border-0" data-aos="fade-up">
+        <div class="card-body">
+          <div class="text-dark py-2 fs-3"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-half" viewBox="0 0 16 16">
+  <path d="M5.354 5.119 7.538.792A.516.516 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.537.537 0 0 1 16 6.32a.548.548 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.52.52 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.58.58 0 0 1 .085-.302.513.513 0 0 1 .37-.245l4.898-.696zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.565.565 0 0 1 .162-.505l2.907-2.77-4.052-.576a.525.525 0 0 1-.393-.288L8.001 2.223 8 2.226v9.8z"/>
+</svg>
+</div>
+          <blockquote class="blockquote">
+            <p>"I´am just a guy who uploads his picture to unsplash.com so that others can use me as placeholder for stupid sample avatars. I don´t even know that my face is on this website."</p>
+          </blockquote>
+          <div class="d-flex justify-content-between border-top pt-3">
+            <p class="card-text">
+              <span class="h6 fw-5">Harry Walters</span><br>
+              <small class="text-muted">Gangster, In Bruges</small>
+            </p>
+            <img src="img/webp/person13.webp" width="48" height="48" class="rounded-circle" alt="" data-aos="fade">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-lg-6 col-xl-4">
+      <div class="card p-4 shadow mt-3 border-0" data-aos="fade-left">
+        <div class="card-body">
+          <div class="text-dark py-2 fs-3"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg>
+
+</div>
+          <blockquote class="blockquote">
+            <p>"Okay, okay, I give it five stars. But do you know what: There is a infinit number of stars out there. So five means nothing."</p>
+          </blockquote>
+          <div class="d-flex justify-content-between border-top pt-3">
+            <p class="card-text">
+              <span class="h6 fw-5">Lizzie Stark</span><br>
+              <small class="text-muted">Head of Security, Brummagem Boys</small>
+            </p>
+            <img src="img/webp/person18.webp" width="48" height="48" class="rounded-circle" alt="" data-aos="fade">
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+    </div>
+  </div>
+</div> -->
+
+<div class="small py-vh-3 w-100 overflow-hidden">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-lg-4 border-end" data-aos="fade-up">
+  <div class="d-flex">
+    <div class="col-md-3 flex-fill pt-3 pe-3 pe-md-0">
+      <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="currentColor" class="bi bi-box-seam" viewbox="0 0 16 16">
+        <path d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5l2.404.961L10.404 2l-2.218-.887zm3.564 1.426L5.596 5 8 5.961 14.154 3.5l-2.404-.961zm3.25 1.7-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923l6.5 2.6zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464L7.443.184z"/>
+      </svg>
+    </div>
+    <div class="col-md-9 flex-fill">
+      <h3 class="h5 my-2">Custom App Development</h3>
+      <p>We specialize in creating tailored iOS applications that meet your unique needs. Our expert developers ensure high performance, user-friendly design, and robust security.</p>
+    </div>
+  </div>
+</div>
+<div class="col-md-6 col-lg-4 border-end" data-aos="fade-up" data-aos-delay="200">
+  <div class="d-flex">
+    <div class="col-md-3 flex-fill pt-3 pt-3 pe-3 pe-md-0">
+      <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="currentColor" class="bi bi-card-checklist" viewbox="0 0 16 16">
+        <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z"/>
+        <path d="M7 5.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0zM7 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0z"/>
+      </svg>
+    </div>
+    <div class="col-md-9 flex-fill">
+      <h3 class="h5 my-2">Quality Assurance</h3>
+      <p>Every app we develop undergoes rigorous testing to ensure it meets the highest standards of quality and performance. We guarantee a seamless user experience.</p>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+  <div class="d-flex">
+    <div class="col-md-3 flex-fill pt-3 pt-3 pe-3 pe-md-0">
+      <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="currentColor" class="bi bi-window-sidebar" viewbox="0 0 16 16">
+        <path d="M2.5 4a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zm2-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm1 .5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z"/>
+        <path d="M2 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2zm12 1a1 1 0 0 1 1 1v2H1V3a1 1 0 0 1 1-1h12zM1 13V6h4v8H2a1 1 0 0 1-1-1zm5 1V6h9v7a1 1 0 0 1-1 1H6z"/>
+      </svg>
+    </div>
+    <div class="col-md-9 flex-fill">
+      <h3 class="h5 my-2">Online Support</h3>
+      <p>Our dedicated support team is available around the clock to assist you with any questions or issues. We're here to ensure your app runs smoothly at all times.</p>
+    </div>
+  </div>
+</div>
+
+    </div>
+  </div>
+</div>
+
+<!-- <div class="container py-vh-3 border-top" data-aos="fade" data-aos-delay="200">
+  <div class="row d-flex justify-content-center">
+    <div class="col-12 col-lg-8 text-center">
+      <h3 class="fs-2 fw-light">Stay in touch with our<span class="fw-bold">
+          monthly and free</span>
+        newsletter!
+    </h3></div>
+    <div class="col-12 col-lg-8 text-center">
+      <div class="row">
+        <div class="grouped-inputs border bg-light p-2">
+  <div class="row">
+    <div class="col">
+      <form class="form-floating">
+        <input type="email" class="form-control p-3" id="floatingInput" placeholder="name@example.com">
+        <label for="floatingInput">Email address</label>
+      </form>
+    </div>
+    <div class="col-auto">
+      <a href="#" class="btn btn-dark py-3 px-5">Subscribe</a>
+    </div>
+  </div>
+</div> -->
+
+      </div>
+    </div>
+  </div>
+</div>
+
+    </main>
+
+    <footer>
+      <div class="container small border-top">
+        <div class="row py-5 d-flex justify-content-between">
+    
+          <!-- Company Information -->
+          <div class="col-12 col-lg-6 col-xl-3 border-end p-5">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-layers-half" viewBox="0 0 16 16">
+              <path d="M8.235 1.559a.5.5 0 0 0-.47 0l-7.5 4a.5.5 0 0 0 0 .882L3.188 8 .264 9.559a.5.5 0 0 0 0 .882l7.5 4a.5.5 0 0 0 .47 0l7.5-4a.5.5 0 0 0 0-.882L12.813 8l2.922-1.559a.5.5 0 0 0 0-.882l-7.5-4zM8 9.433 1.562 6 8 2.567 14.438 6 8 9.433z"/>
+            </svg>
+            <address class="text-secondary mt-3">
+              <strong>Apricus LLP.</strong><br>
+              <!-- 1234 Innovation Drive,<br>
+              Tech City, TC 56789<br>
+              <abbr title="Phone">P:</abbr> (123) 456-7890 -->
+            </address>
+          </div>
+    
+          <!-- Company Links -->
+          <div class="col-12 col-lg-6 col-xl-3 border-end p-5">
+            <h3 class="h6 mb-3">Company</h3>
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link link-secondary ps-0" href="#">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-secondary ps-0" href="soon.html">Our Team</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-secondary ps-0" href="soon.html">Careers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-secondary ps-0" href="#contactus">Contact</a>
+              </li>
+            </ul>
+          </div>
+    
+          <!-- Services -->
+          <div class="col-12 col-lg-6 col-xl-3 border-end p-5">
+            <h3 class="h6 mb-3">Services</h3>
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link link-secondary ps-0" href="soon.html">iOS App Development</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-secondary ps-0" href="soon.html">Web Development</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-secondary ps-0" href="soon.html">UI/UX Design</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-secondary ps-0" href="soon.html">Consulting</a>
+              </li>
+            </ul>
+          </div>
+    
+          <!-- Resources -->
+          <div class="col-12 col-lg-6 col-xl-3 p-5">
+            <h3 class="h6 mb-3">Resources</h3>
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link link-secondary ps-0" href="soon.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-secondary ps-0" href="soon.html">FAQ</a>
+              </li>
+              <li class="nav-link link-secondary ps-0" href="soon.html">Support</a>
+              </li>
+              <li class="nav-link link-secondary ps-0" href="soon.html">Documentation</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+
     <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/jquery-3.0.0.min.js"></script>
-    <script src="js/plugin.js"></script>
-    <!-- sidebar -->
-    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-    <script src="js/custom.js"></script>
-    <!-- javascript --> 
-    <script src="js/owl.carousel.js"></script>
-    <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
-    <script>
-    $(document).ready(function(){
-    $(".fancybox").fancybox({
-        openEffect: "none",
-        closeEffect: "none"
-        });
-    </script>
-</body>
+<script src="js/aos.js"></script>
+ <script>
+ AOS.init({
+   duration: 800, // values from 0 to 3000, with step 50ms
+ });
+ </script>
+
+ <script>
+  let scrollpos = window.scrollY
+  const header = document.querySelector(".navbar")
+  const header_height = header.offsetHeight
+
+  const add_class_on_scroll = () => header.classList.add("scrolled", "shadow-sm")
+  const remove_class_on_scroll = () => header.classList.remove("scrolled", "shadow-sm")
+
+  window.addEventListener('scroll', function() {
+    scrollpos = window.scrollY;
+
+    if (scrollpos >= header_height) { add_class_on_scroll() }
+    else { remove_class_on_scroll() }
+
+    console.log(scrollpos)
+  })
+</script>
+
+  </body>
 </html>
